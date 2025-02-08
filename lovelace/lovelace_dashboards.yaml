@@ -1,0 +1,14 @@
+items:
+- icon: mdi:map
+  id: map
+  mode: storage
+  require_admin: false
+  show_in_sidebar: true
+  title: Map
+  url_path: map
+- id: dashboard_network
+  mode: storage
+  require_admin: false
+  show_in_sidebar: true
+  title: Network
+  url_path: dashboard-network

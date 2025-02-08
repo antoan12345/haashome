@@ -1,0 +1,1727 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This account had already been configured!",
+      "yaml_not_supported": "Updating configuration for YAML entries is not supported"
+    },
+    "error": {
+      "cannot_connect": "Cannot retrieve data from remote server",
+      "invalid_auth": "Invalid authentication information"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "language": "Data translation language",
+          "password": "Password",
+          "username": "Username",
+          "verify_ssl": "Verify SSL certificates"
+        },
+        "description": "Enter your credentials for your Pandora Online account.",
+        "title": "Authentication"
+      }
+    }
+  },
+  "device_automation": {
+    "trigger_type": {
+      "active_security_alert": "Event: Active Security Alert",
+      "active_security_disabled": "Event: Active Security Disabled",
+      "active_security_enabled": "Event: Active Security Enabled",
+      "alert": "Event: Alert",
+      "block_heater_disabled": "Event: Block Heater Disabled",
+      "block_heater_enabled": "Event: Block Heater Enabled",
+      "bluetooth_status": "Event: Bluetooth Status",
+      "check_received": "Event: Check Received",
+      "collision": "Event: Collision",
+      "driving": "Event: Driving",
+      "dtc_erase_active": "Event: Dtc Erase Active",
+      "dtc_erase_request": "Event: Dtc Erase Request",
+      "dtc_read_active": "Event: Dtc Read Active",
+      "dtc_read_error": "Event: Dtc Read Error",
+      "dtc_read_request": "Event: Dtc Read Request",
+      "eco_mode_disabled": "Event: Eco Mode Disabled",
+      "eco_mode_enabled": "Event: Eco Mode Enabled",
+      "emergency_call": "Event: Emergency Call",
+      "engine_locked": "Event: Engine Locked",
+      "engine_running_prolongation": "Event: Engine Running Prolongation",
+      "engine_started": "Event: Engine Started",
+      "engine_stopped": "Event: Engine Stopped",
+      "factory_testing": "Event: Factory Testing",
+      "failed_start_attempt": "Event: Failed Start Attempt",
+      "gsm_channel_disabled": "Event: Gsm Channel Disabled",
+      "gsm_channel_enabled": "Event: Gsm Channel Enabled",
+      "gsm_connection": "Event: Gsm Connection",
+      "locking_disabled": "Event: Locking Disabled",
+      "locking_enabled": "Event: Locking Enabled",
+      "nav_11_status": "Event: Nav 11 Status",
+      "point": "Event: Point",
+      "power_dip": "Event: Power Dip",
+      "refuel": "Event: Refuel",
+      "rough_road_conditions": "Event: Rough Road Conditions",
+      "secure_trunk_open": "Event: Secure Trunk Open",
+      "service_mode_disabled": "Event: Service Mode Disabled",
+      "service_mode_enabled": "Event: Service Mode Enabled",
+      "settings_changed": "Event: Settings Changed",
+      "system_login": "Event: System Login",
+      "system_message": "Event: System Message",
+      "system_power_loss": "Event: System Power Loss",
+      "tag_polling_disabled": "Event: Tag Polling Disabled",
+      "tag_polling_enabled": "Event: Tag Polling Enabled",
+      "tag_requirement_disabled": "Event: Tag Requirement Disabled",
+      "tag_requirement_enabled": "Event: Tag Requirement Enabled",
+      "tire_pressure_low": "Event: Tire Pressure Low",
+      "tracking_disabled": "Event: Tracking Disabled",
+      "tracking_enabled": "Event: Tracking Enabled",
+      "unknown": "Event: Unknown"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "brakes": {
+        "name": "Brakes",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "can_low_liquid": {
+        "name": "CAN Low Liquid",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "center_back_safety_belt": {
+        "name": "Center Back Safety Belt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "connection_state": {
+        "name": "Connection state",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "driver_door": {
+        "name": "Driver Door",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "driver_glass": {
+        "name": "Driver Glass",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "driver_safety_belt": {
+        "name": "Driver Safety Belt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "engine_locked": {
+        "name": "Engine Locked",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "ev_charging_connected": {
+        "name": "EV Charging Connected",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "evacuation_mode": {
+        "name": "Evacuation Mode",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "exterior_lights": {
+        "name": "Exterior Lights",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "heater_errors": {
+        "name": "Heater Errors",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "hood": {
+        "name": "Hood",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "ignition": {
+        "name": "Ignition",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "left_back_door": {
+        "name": "Left Back Door",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "left_back_glass": {
+        "name": "Left Back Glass",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "left_back_safety_belt": {
+        "name": "Left Back Safety Belt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "moving": {
+        "name": "Moving",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "parking": {
+        "name": "Parking Mode",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "passenger_door": {
+        "name": "Passenger Door",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "passenger_glass": {
+        "name": "Passenger Glass",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "passenger_safety_belt": {
+        "name": "Passenger Safety Belt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "right_back_door": {
+        "name": "Right Back Door",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "right_back_glass": {
+        "name": "Right Back Glass",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "right_back_safety_belt": {
+        "name": "Right Back Safety Belt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "seat_taken": {
+        "name": "Seat Taken",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "trunk": {
+        "name": "Trunk",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      }
+    },
+    "button": {
+      "additional_command_1": {
+        "name": "Additional Command 1",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "additional_command_2": {
+        "name": "Additional Command 2",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "check": {
+        "name": "Check",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_comfort": {
+        "name": "Climate Comfort",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_interior_ventilation": {
+        "name": "Climate Interior Ventilation",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "enable_stealth_mode": {
+        "name": "Enable Stealth Mode",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "erase_errors": {
+        "name": "Erase Errors",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "read_errors": {
+        "name": "Read Errors",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "trigger_horn": {
+        "name": "Trigger Horn",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "trigger_light": {
+        "name": "Trigger Light",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "trigger_trunk": {
+        "name": "Trigger Trunk",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "wake_up": {
+        "name": "Wake Up",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      }
+    },
+    "device_tracker": {
+      "pandora": {
+        "name": "Pandora",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          },
+          "direction": {
+            "name": "Компас"
+          },
+          "gsm_level": {
+            "name": "GSM Level"
+          },
+          "rotation": {
+            "name": "Поворот"
+          }
+        }
+      }
+    },
+    "lock": {
+      "central_lock": {
+        "name": "Central Lock",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      }
+    },
+    "number": {
+      "climate_seat_heating": {
+        "name": "Climate Seat Heating",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_seat_ventilation": {
+        "name": "Climate Seat Ventilation",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_target_temperature": {
+        "name": "Climate Target Temperature",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      }
+    },
+    "sensor": {
+      "balance": {
+        "name": "Balance",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          },
+          "phone_number": {
+            "name": "Phone Number"
+          }
+        }
+      },
+      "balance_secondary": {
+        "name": "Balance Secondary",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          },
+          "phone_number": {
+            "name": "Phone Number"
+          }
+        }
+      },
+      "battery_temperature": {
+        "name": "Battery Temperature",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "battery_voltage": {
+        "name": "Battery voltage",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "can_mileage": {
+        "name": "CAN Mileage",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "can_mileage_by_battery": {
+        "name": "CAN Mileage batt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "can_mileage_to_empty": {
+        "name": "CAN Mileage to empty",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "engine_temperature": {
+        "name": "Engine Temperature",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "exterior_temperature": {
+        "name": "Exterior Temperature",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "fuel": {
+        "name": "Fuel Level",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "fuel_consumption": {
+        "name": "Fuel Consumption",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "gsm_level": {
+        "name": "GSM Level",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "interior_temperature": {
+        "name": "Interior Temperature",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "key_number": {
+        "name": "Key Number",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "last_command_execution": {
+        "name": "Last Command Execution",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "last_online": {
+        "name": "Last Online",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "last_settings_change": {
+        "name": "Last Settings Change",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "last_state_update": {
+        "name": "Last State Update",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "left_back_tire_pressure": {
+        "name": "Left Back Tire Pressure",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "left_front_tire_pressure": {
+        "name": "Left Front Tire Pressure",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "mileage": {
+        "name": "Mileage",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "reserve_tire_pressure": {
+        "name": "Reserve Tire Pressure",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "right_back_tire_pressure": {
+        "name": "Right Back Tire Pressure",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "right_front_tire_pressure": {
+        "name": "Right Front Tire Pressure",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "soc": {
+        "name": "State Of Charge",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "speed": {
+        "name": "Speed",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "tachometer": {
+        "name": "Tachometer",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "tag_number": {
+        "name": "Tag Number",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "track_distance": {
+        "name": "Track Distance",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      }
+    },
+    "switch": {
+      "active_security": {
+        "name": "Active Security",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "block_heater": {
+        "name": "Block Heater",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_air_conditioning": {
+        "name": "Climate Air Conditioning",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_battery_heating": {
+        "name": "Climate Battery Heating",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_defroster": {
+        "name": "Climate Defroster",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_glass_heating": {
+        "name": "Climate Glass Heating",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_steering_heating": {
+        "name": "Climate Steering Heating",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "climate_system": {
+        "name": "Climate System",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "engine": {
+        "name": "Engine",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "ext_channel": {
+        "name": "Extra Channel",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "service_mode": {
+        "name": "Service Mode",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "status_output": {
+        "name": "Status Output",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      },
+      "tracking": {
+        "name": "Tracking",
+        "state_attributes": {
+          "device_id": {
+            "name": "Pandora Device"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "error": {
+      "interval_too_short": "Interval too short"
+    },
+    "step": {
+      "device_options": {
+        "data": {
+          "arrow": "Arrow (archery)",
+          "bird": "Bird",
+          "car": "Car (sedan)",
+          "coordinates_debounce": "Coordinates debouncing",
+          "custom_cursor_type": "Custom cursor type",
+          "disable_cursor_rotation": "Disable cursor rotation",
+          "engine_state_by_rpm": "Engine state by RPM",
+          "filter_fuel_drops": "Fuel tank threshold above which dips to 0 are ignored",
+          "fuel_is_liters": "Devices with fuel tank measurement in liters",
+          "ignore_ws_coordinates": "Ignore coordinates updates from WebSockets",
+          "mileage_can_miles": "CAN mileage is in miles",
+          "mileage_miles": "System mileage is in miles",
+          "moto": "Motorcycle",
+          "offline_as_unavailable": "Make online-sensitive entities unavailable when device becomes offline",
+          "pierced_heart": "Pierced heart",
+          "rocket": "Rocket",
+          "rpm_coefficient": "RPM coefficient",
+          "rpm_offset": "RPM offset",
+          "truck": "Truck"
+        }
+      },
+      "init": {
+        "menu_options": {
+          "device_options": "Device options",
+          "integration_options": "Integration options",
+          "save": "Save changes"
+        }
+      },
+      "integration_options": {
+        "data": {
+          "effective_read_timeout": "Timeout for WebSockets responses",
+          "force_lock_icons": "Use lock icons",
+          "language": "Data translation language",
+          "method": "Method of updating devices' data",
+          "polling_interval": "HTTP polling interval",
+          "verify_ssl": "Verify SSL certificates"
+        }
+      }
+    }
+  },
+  "services": {
+    "additional_command_1": {
+      "description": "Execute primary user-defined action.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Additional Command 1"
+    },
+    "additional_command_2": {
+      "description": "Execute secondary user-defined action.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Additional Command 2"
+    },
+    "benish_disable_engine_blocking": {
+      "description": "Execute command on the remote device: BENISH_DISABLE_ENGINE_BLOCKING (57346)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Benish Disable Engine Blocking"
+    },
+    "benish_disable_service_mode": {
+      "description": "Execute command on the remote device: BENISH_DISABLE_SERVICE_MODE (57632)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Benish Disable Service Mode"
+    },
+    "benish_enable_engine_blocking": {
+      "description": "Execute command on the remote device: BENISH_ENABLE_ENGINE_BLOCKING (57347)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Benish Enable Engine Blocking"
+    },
+    "benish_enable_service_mode": {
+      "description": "Execute command on the remote device: BENISH_ENABLE_SERVICE_MODE (57633)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Benish Enable Service Mode"
+    },
+    "check": {
+      "description": "Initiate telemetry retrieval operation (update data).",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Check"
+    },
+    "climate_ac_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_AC_TURN_OFF (58634)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Ac Turn Off"
+    },
+    "climate_ac_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_AC_TURN_ON (58633)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Ac Turn On"
+    },
+    "climate_battery_heat_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_BATTERY_HEAT_TURN_OFF (58648)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Battery Heat Turn Off"
+    },
+    "climate_battery_heat_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_BATTERY_HEAT_TURN_ON (58647)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Battery Heat Turn On"
+    },
+    "climate_defroster_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_DEFROSTER_TURN_OFF (58638)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Defroster Turn Off"
+    },
+    "climate_defroster_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_DEFROSTER_TURN_ON (58637)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Defroster Turn On"
+    },
+    "climate_glass_heat_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_GLASS_HEAT_TURN_OFF (58630)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Glass Heat Turn Off"
+    },
+    "climate_glass_heat_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_GLASS_HEAT_TURN_ON (58629)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Glass Heat Turn On"
+    },
+    "climate_mode_comfort": {
+      "description": "Execute command on the remote device: CLIMATE_MODE_COMFORT (58639)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Mode Comfort"
+    },
+    "climate_mode_vent": {
+      "description": "Execute command on the remote device: CLIMATE_MODE_VENT (58640)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Mode Vent"
+    },
+    "climate_seat_heat_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_SEAT_HEAT_TURN_OFF (58626)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Seat Heat Turn Off"
+    },
+    "climate_seat_heat_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_SEAT_HEAT_TURN_ON (58625)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Seat Heat Turn On"
+    },
+    "climate_seat_vent_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_SEAT_VENT_TURN_OFF (58628)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Seat Vent Turn Off"
+    },
+    "climate_seat_vent_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_SEAT_VENT_TURN_ON (58627)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Seat Vent Turn On"
+    },
+    "climate_set_temperature": {
+      "description": "Execute command on the remote device: CLIMATE_SET_TEMPERATURE (58624)",
+      "fields": {
+        "climate_temp": {
+          "description": "Target temperature to maintain within the interior.",
+          "name": "Target Temperature"
+        },
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Set Temperature"
+    },
+    "climate_steering_heat_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_STEERING_HEAT_TURN_OFF (58632)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Steering Heat Turn Off"
+    },
+    "climate_steering_heat_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_STEERING_HEAT_TURN_ON (58631)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Steering Heat Turn On"
+    },
+    "climate_sys_turn_off": {
+      "description": "Execute command on the remote device: CLIMATE_SYS_TURN_OFF (58636)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Sys Turn Off"
+    },
+    "climate_sys_turn_on": {
+      "description": "Execute command on the remote device: CLIMATE_SYS_TURN_ON (58635)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Climate Sys Turn On"
+    },
+    "disable_active_security": {
+      "description": "Deactivate enhanced security measures.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Disable Active Security"
+    },
+    "disable_connection": {
+      "description": "Prevent real time telemetric connections with online services.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Disable Connection"
+    },
+    "disable_service_mode": {
+      "description": "Deactivate the service mode.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Disable Service Mode"
+    },
+    "disable_status_output": {
+      "description": "Activate additional status output channel.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Disable Status Output"
+    },
+    "disable_tracking": {
+      "description": "Deactivate the vehicle's tracking system.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Disable Tracking"
+    },
+    "enable_active_security": {
+      "description": "Activate enhanced security measures.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Enable Active Security"
+    },
+    "enable_connection": {
+      "description": "Allow real time telemetric connections with online services.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Enable Connection"
+    },
+    "enable_service_mode": {
+      "description": "Active the service mode.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Enable Service Mode"
+    },
+    "enable_status_output": {
+      "description": "Activate additional status output channel.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Enable Status Output"
+    },
+    "enable_stealth_mode": {
+      "description": "Execute command on the remote device: ENABLE_STEALTH_MODE (50)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Enable Stealth Mode"
+    },
+    "enable_tracking": {
+      "description": "Activate the vehicle's tracking system.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Enable Tracking"
+    },
+    "erase_dtc": {
+      "description": "Clear stored diagnostic trouble codes.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Erase Diagnostic Trouble Codes (DTC)"
+    },
+    "geocode": {
+      "description": "Retrieve short address of a location based on latitude and longitude.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "location": {
+          "description": "Target location (in the form of latitude and longitude dictionary).",
+          "name": "Location"
+        }
+      },
+      "name": "Location Geocoding"
+    },
+    "lock": {
+      "description": "Engage the vehicle's security mechanism to prevent access.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Lock"
+    },
+    "nav12_disable_service_mode": {
+      "description": "Execute command on the remote device: NAV12_DISABLE_SERVICE_MODE (57374)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Disable Service Mode"
+    },
+    "nav12_disable_status_output": {
+      "description": "Execute command on the remote device: NAV12_DISABLE_STATUS_OUTPUT (57371)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Disable Status Output"
+    },
+    "nav12_enable_service_mode": {
+      "description": "Execute command on the remote device: NAV12_ENABLE_SERVICE_MODE (57375)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Enable Service Mode"
+    },
+    "nav12_enable_status_output": {
+      "description": "Execute command on the remote device: NAV12_ENABLE_STATUS_OUTPUT (57372)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Enable Status Output"
+    },
+    "nav12_reset_errors": {
+      "description": "Execute command on the remote device: NAV12_RESET_ERRORS (57408)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Reset Errors"
+    },
+    "nav12_turn_off_block_heater": {
+      "description": "Execute command on the remote device: NAV12_TURN_OFF_BLOCK_HEATER (57353)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Turn Off Block Heater"
+    },
+    "nav12_turn_on_block_heater": {
+      "description": "Execute command on the remote device: NAV12_TURN_ON_BLOCK_HEATER (57354)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Nav12 Turn On Block Heater"
+    },
+    "ps_call": {
+      "description": "Execute command on the remote device: PS_CALL (256)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Ps Call"
+    },
+    "read_dtc": {
+      "description": "Retrieve diagnostic trouble codes.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Read Diagnostic Trouble Codes (DTC)"
+    },
+    "remote_command": {
+      "description": "Execute a specific command (defined by a command identifier).",
+      "fields": {
+        "command_id": {
+          "description": "Numeric identifier of the command handled by the target Pandora device firmware.",
+          "name": "Command Identifier"
+        },
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Remote Command"
+    },
+    "start_engine": {
+      "description": "Commence the vehicle's engine remotely (autostart operation).",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Start Engine"
+    },
+    "stay_home_propion": {
+      "description": "Execute command on the remote device: STAY_HOME_PROPION (42)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Stay Home Propion"
+    },
+    "stop_engine": {
+      "description": "Halt the running vehicle engine remotely (autostart operation).",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Stop Engine"
+    },
+    "trigger_horn": {
+      "description": "Activate the vehicle's horn as an alert.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Trigger Horn"
+    },
+    "trigger_light": {
+      "description": "Activate the vehicle's lights as an alert.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Trigger Light"
+    },
+    "trigger_trunk": {
+      "description": "Activate the trunk release mechanism.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Trigger Trunk"
+    },
+    "turn_off_block_heater": {
+      "description": "Execute command on the remote device: TURN_OFF_BLOCK_HEATER (22)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Turn Off Block Heater"
+    },
+    "turn_off_coolant_heater": {
+      "description": "Stop the coolant heater operation.",
+      "fields": {
+        "device_id": {
+          "description": "Unique identifier of the target Pandora device.",
+          "name": "Pandora Device"
+        }
+      },
+      "name": "Turn Off Coolant Heater"
+    },
+    "turn_off_ext_channel": {
+      "description": "Deactivate an external channel or accessory.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Turn Off Ext Channel"
+    },
+    "turn_on_block_heater": {
+      "description": "Execute command on the remote device: TURN_ON_BLOCK_HEATER (21)",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Turn On Block Heater"
+    },
+    "turn_on_coolant_heater": {
+      "description": "Start the coolant heater operation.",
+      "fields": {
+        "device_id": {
+          "description": "Unique identifier of the target Pandora device.",
+          "name": "Pandora Device"
+        }
+      },
+      "name": "Turn On Coolant Heater"
+    },
+    "turn_on_ext_channel": {
+      "description": "Activate an external channel or accessory.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Turn On Ext Channel"
+    },
+    "unlock": {
+      "description": "Disengage the vehicle's security mechanism to allow access.",
+      "fields": {
+        "device_id": {
+          "description": "Home Assistant device object / identifier.",
+          "name": "Home Assistant Device"
+        },
+        "ensure_complete": {
+          "description": "Ensure the command gets sent successfully.",
+          "name": "Ensure completion"
+        }
+      },
+      "name": "Unlock"
+    }
+  }
+}

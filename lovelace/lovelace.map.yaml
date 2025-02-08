@@ -1,0 +1,10 @@
+config:
+  views:
+  - cards:
+    - auto_fit: true
+      entities: []
+      theme_mode: auto
+      type: map
+    icon: mdi:map
+    title: Map
+    type: panel

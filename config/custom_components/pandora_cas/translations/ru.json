@@ -1,0 +1,1792 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Учётная запись для данного пользователя уже существует!",
+      "yaml_not_supported": "Изменение данных YAML-конфигураций недоступно из интерфейса"
+    },
+    "error": {
+      "cannot_connect": "Невозможно выполнить запрос",
+      "invalid_auth": "Имя пользователя и/или пароль не подходят"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "language": "Язык перевода данных",
+          "password": "Пароль",
+          "username": "Имя пользователя",
+          "verify_ssl": "Проверять сертификаты SSL"
+        },
+        "description": "Введите данные для входа в Ваш аккаунт Pandora Online.",
+        "title": "Аутентификация"
+      }
+    }
+  },
+  "device_automation": {
+    "trigger_type": {
+      "active_security_alert": "Событие: Тревога в режиме активной защиты",
+      "active_security_disabled": "Событие: Включение режима Активной Защиты",
+      "active_security_enabled": "Событие: Выключение режима Активной Защиты",
+      "alert": "Событие: Тревога",
+      "block_heater_disabled": "Событие: Отключение предпускового подогревателя",
+      "block_heater_enabled": "Событие: Включение предпускового подогревателя",
+      "bluetooth_status": "Событие: Состояние Bluetooth",
+      "check_received": "Событие: Получена команда CHECK",
+      "collision": "Событие: Столкновение",
+      "driving": "Событие: В движении",
+      "dtc_erase_active": "Событие: Dtc Erase Active",
+      "dtc_erase_request": "Событие: Dtc Erase Request",
+      "dtc_read_active": "Событие: Dtc Read Active",
+      "dtc_read_error": "Событие: Dtc Read Error",
+      "dtc_read_request": "Событие: Dtc Read Request",
+      "eco_mode_disabled": "Событие: Включение Эко-режима",
+      "eco_mode_enabled": "Событие: Отключение Эко-режима",
+      "emergency_call": "Событие: Экстренный вызов",
+      "engine_locked": "Событие: Двигатель заблокирован",
+      "engine_running_prolongation": "Событие: Продление времени работы двигателя",
+      "engine_started": "Событие: Двигатель запущен",
+      "engine_stopped": "Событие: Двигатель остановлен",
+      "factory_testing": "Событие: Factory Testing",
+      "failed_start_attempt": "Событие: Ошибка запуска двигателя",
+      "gsm_channel_disabled": "Событие: Канал GSM отключен",
+      "gsm_channel_enabled": "Событие: Канал GSM включен",
+      "gsm_connection": "Событие: Сотовая связь",
+      "locking_disabled": "Событие: Снятие с охраны",
+      "locking_enabled": "Событие: Постановка на охрану",
+      "nav_11_status": "Событие: Nav 11 Status",
+      "point": "Событие: Point",
+      "power_dip": "Событие: Просадка по питанию",
+      "refuel": "Событие: Заправка",
+      "rough_road_conditions": "Событие: Rough Road Conditions",
+      "secure_trunk_open": "Событие: Secure Trunk Open",
+      "service_mode_disabled": "Событие: Выключение сервисного режима",
+      "service_mode_enabled": "Событие: Сервисный режим включен",
+      "settings_changed": "Событие: Настройки изменены",
+      "system_login": "Событие: System Login",
+      "system_message": "Событие: Сообщение системы",
+      "system_power_loss": "Событие: Система потеряла питание",
+      "tag_polling_disabled": "Событие: Tag Polling Disabled",
+      "tag_polling_enabled": "Событие: Tag Polling Enabled",
+      "tag_requirement_disabled": "Событие: Tag Requirement Disabled",
+      "tag_requirement_enabled": "Событие: Tag Requirement Enabled",
+      "tire_pressure_low": "Событие: Низкое давление в шинах",
+      "tracking_disabled": "Событие: Отслеживание отключено",
+      "tracking_enabled": "Событие: Отслеживание включено",
+      "unknown": "Событие: Unknown"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "brakes": {
+        "name": "Тормоз",
+        "state_attributes": {
+          "device_id": {
+            "name": "Идентификатор устройства"
+          }
+        }
+      },
+      "can_low_liquid": {
+        "name": "Низкий уровень жидкости",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "center_back_safety_belt": {
+        "name": "Задний центральный ремень безопасности",
+        "state": {
+          "off": "Отстёгнут",
+          "on": "Пристёгнут"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "connection_state": {
+        "name": "Соединение",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "driver_door": {
+        "name": "Дверь водителя",
+        "state": {
+          "off": "Закрыта",
+          "on": "Открыта"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "driver_glass": {
+        "name": "Стеклоподъёмник водителя",
+        "state": {
+          "off": "Поднят",
+          "on": "Опущен"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "driver_safety_belt": {
+        "name": "Ремень безопасности водителя",
+        "state": {
+          "off": "Отстёгнут",
+          "on": "Пристёгнут"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "engine_locked": {
+        "name": "Блокировка двигателя",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "ev_charging_connected": {
+        "name": "Зарядка подключена",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "evacuation_mode": {
+        "name": "Режим эвакуации",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "exterior_lights": {
+        "name": "Световые сигналы",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "heater_errors": {
+        "name": "Ошибки подогревателя",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "hood": {
+        "name": "Капот",
+        "state": {
+          "off": "Закрыт",
+          "on": "Открыт"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "ignition": {
+        "name": "Зажигание",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "left_back_door": {
+        "name": "Левая задняя дверь",
+        "state": {
+          "off": "Закрыта",
+          "on": "Открыта"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "left_back_glass": {
+        "name": "Задний левый стеклоподъёмник",
+        "state": {
+          "off": "Поднят",
+          "on": "Опущен"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "left_back_safety_belt": {
+        "name": "Задний левый ремень безопасности",
+        "state": {
+          "off": "Отстёгнут",
+          "on": "Пристёгнут"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "moving": {
+        "name": "В движении",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "parking": {
+        "name": "Нейтраль",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "passenger_door": {
+        "name": "Дверь пассажира",
+        "state": {
+          "off": "Закрыта",
+          "on": "Открыта"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "passenger_glass": {
+        "name": "Стеклоподъёмник пассажира",
+        "state": {
+          "off": "Поднят",
+          "on": "Опущен"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "passenger_safety_belt": {
+        "name": "Ремень безопасности пассажира",
+        "state": {
+          "off": "Отстёгнут",
+          "on": "Пристёгнут"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "right_back_door": {
+        "name": "Правая задняя дверь",
+        "state": {
+          "off": "Закрыта",
+          "on": "Открыта"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "right_back_glass": {
+        "name": "Задний правый стеклоподъёмник",
+        "state": {
+          "off": "Поднят",
+          "on": "Опущен"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "right_back_safety_belt": {
+        "name": "Задний правый ремень безопасности",
+        "state": {
+          "off": "Отстёгнут",
+          "on": "Пристёгнут"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "seat_taken": {
+        "name": "Кресло занято",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "trunk": {
+        "name": "Багажник",
+        "state": {
+          "off": "Закрыт",
+          "on": "Открыт"
+        },
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      }
+    },
+    "button": {
+      "additional_command_1": {
+        "name": "Дополнительная команда 1",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "additional_command_2": {
+        "name": "Дополнительная команда 2",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "check": {
+        "name": "Команда CHECK",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_comfort": {
+        "name": "Климатический режим Комфорт",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_interior_ventilation": {
+        "name": "Вентиляция всего салона",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "enable_stealth_mode": {
+        "name": "Включение режима Stealth",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "erase_errors": {
+        "name": "Очистить ошибки",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "read_errors": {
+        "name": "Считать ошибки",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "trigger_horn": {
+        "name": "Подать звуковой сигнал",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "trigger_light": {
+        "name": "Моргнуть фарами",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "trigger_trunk": {
+        "name": "Открыть багажник",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "wake_up": {
+        "name": "Пробудить",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      }
+    },
+    "device_tracker": {
+      "pandora": {
+        "name": "Pandora",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          },
+          "direction": {
+            "name": "Компас"
+          },
+          "gsm_level": {
+            "name": "Сотовый сигнал"
+          },
+          "rotation": {
+            "name": "Поворот"
+          }
+        }
+      }
+    },
+    "lock": {
+      "central_lock": {
+        "name": "Центральный замок",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      }
+    },
+    "number": {
+      "climate_seat_heating": {
+        "name": "Подогрев сидений",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_seat_ventilation": {
+        "name": "Вентиляция сидений",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_target_temperature": {
+        "name": "Целевая температура салона",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      }
+    },
+    "sensor": {
+      "balance": {
+        "name": "Баланс SIM",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          },
+          "phone_number": {
+            "name": "Номер телефона"
+          }
+        }
+      },
+      "balance_secondary": {
+        "name": "Баланс второй SIM-карты",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          },
+          "phone_number": {
+            "name": "Номер телефона"
+          }
+        }
+      },
+      "battery_temperature": {
+        "name": "Температура аккумулятора",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "battery_voltage": {
+        "name": "Напряжение аккумулятора",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "can_mileage": {
+        "name": "Пробег по CAN",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "can_mileage_by_battery": {
+        "name": "CAN Mileage batt",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "can_mileage_to_empty": {
+        "name": "Пробег по CAN на топливе",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "engine_temperature": {
+        "name": "Температура двигателя",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "exterior_temperature": {
+        "name": "Температура за бортом",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "fuel": {
+        "name": "Топливный бак",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "fuel_consumption": {
+        "name": "Расход топлива",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "gsm_level": {
+        "name": "Сотовый сигнал",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "interior_temperature": {
+        "name": "Температура в салоне",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "key_number": {
+        "name": "Номер ключа",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "last_command_execution": {
+        "name": "Последнее выполнение команды",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "last_online": {
+        "name": "Последняя связь",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "last_settings_change": {
+        "name": "Последнее изменение настроек",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "last_state_update": {
+        "name": "Последнее обновление состояния",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "left_back_tire_pressure": {
+        "name": "Давление задней левой шины",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "left_front_tire_pressure": {
+        "name": "Давление передней левой шины",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "mileage": {
+        "name": "Пробег системы",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "reserve_tire_pressure": {
+        "name": "Давление запасной шины",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "right_back_tire_pressure": {
+        "name": "Давление задней правой шины",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "right_front_tire_pressure": {
+        "name": "Давление передней правой шины",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "soc": {
+        "name": "State Of Charge",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "speed": {
+        "name": "Скорость",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "tachometer": {
+        "name": "Обороты",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "tag_number": {
+        "name": "Номер метки",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "track_distance": {
+        "name": "Дистанция трека",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      }
+    },
+    "switch": {
+      "active_security": {
+        "name": "Активная охрана",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "block_heater": {
+        "name": "Предпусковой подогреватель",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_air_conditioning": {
+        "name": "Кондиционер",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_battery_heating": {
+        "name": "Подогреватель аккумулятора",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_defroster": {
+        "name": "Обогрев лобового стекла",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_glass_heating": {
+        "name": "Обогрев стёкол и зеркал",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_steering_heating": {
+        "name": "Обогрев рулевого управления",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "climate_system": {
+        "name": "Климатическая система",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "engine": {
+        "name": "Двигатель",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "ext_channel": {
+        "name": "Дополнительный канал",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "service_mode": {
+        "name": "Режим техосмотра",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "status_output": {
+        "name": "Статусный выход",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      },
+      "tracking": {
+        "name": "Трекинг",
+        "state_attributes": {
+          "device_id": {
+            "name": "Устройство Pandora"
+          }
+        }
+      }
+    }
+  },
+  "options": {
+    "error": {
+      "interval_too_short": "Слишком короткий интервал"
+    },
+    "step": {
+      "device_options": {
+        "data": {
+          "arrow": "Стрела для лука",
+          "bird": "Птица",
+          "car": "Автомобиль",
+          "coordinates_debounce": "Сглаживание координат",
+          "custom_cursor_type": "Вид курсора трекера",
+          "disable_cursor_rotation": "Отключить вращение курсора",
+          "engine_state_by_rpm": "Состояние двигателя по оборотам",
+          "filter_fuel_drops": "Уровень топлива, выше которого 'провалы' игнорируются",
+          "fuel_is_liters": "Топливный бак в литрах",
+          "ignore_ws_coordinates": "Игнорировать обновления координат WS",
+          "mileage_can_miles": "Пробег по CAN в милях",
+          "mileage_miles": "Системный пробег в милях",
+          "moto": "Мотоцикл",
+          "offline_as_unavailable": "Оффлайн делает объекты недоступными",
+          "pierced_heart": "Поражённое сердце",
+          "rocket": "Ракета",
+          "rpm_coefficient": "Коэффициент оборотов",
+          "rpm_offset": "Сдвиг оборотов",
+          "truck": "Грузовик"
+        },
+        "title": "Настройки устройства"
+      },
+      "init": {
+        "menu_options": {
+          "device_options": "Настройки устройств",
+          "integration_options": "Настройки интеграции",
+          "save": "Сохранить изменения"
+        }
+      },
+      "integration_options": {
+        "data": {
+          "effective_read_timeout": "Таймаут ответов WebSockets",
+          "force_lock_icons": "Использовать иконки замка",
+          "language": "Язык перевода данных",
+          "method": "Метод получения данных об устройствах",
+          "polling_interval": "Интервал опроса по HTTP",
+          "verify_ssl": "Проверять сертификаты SSL"
+        },
+        "data_description": {
+          "verify_ssl": "Выполнять проверку на безопасность соединения с серверами AlarmTrade."
+        },
+        "title": "Настройки интеграции"
+      }
+    }
+  },
+  "services": {
+    "additional_command_1": {
+      "description": "Выполнить первый заданный пользователем алгоритм действий.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Дополнительная команда №1"
+    },
+    "additional_command_2": {
+      "description": "Выполнить второй заданный пользователем алгоритм действий.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Дополнительная команда №2"
+    },
+    "benish_disable_engine_blocking": {
+      "description": "Выполнить команду на удалённом устройстве: BENISH_DISABLE_ENGINE_BLOCKING (57346)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(BENISH) Выключить блокировку двигателя"
+    },
+    "benish_disable_service_mode": {
+      "description": "Выполнить команду на удалённом устройстве: BENISH_DISABLE_SERVICE_MODE (57632)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(BENISH) Выключить режим ТО2"
+    },
+    "benish_enable_engine_blocking": {
+      "description": "Выполнить команду на удалённом устройстве: BENISH_ENABLE_ENGINE_BLOCKING (57347)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(BENISH) Включить блокировку двигателя"
+    },
+    "benish_enable_service_mode": {
+      "description": "Выполнить команду на удалённом устройстве: BENISH_ENABLE_SERVICE_MODE (57633)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(BENISH) Включить режим ТО2"
+    },
+    "check": {
+      "description": "Отправить команду на удалённое устройство для немедленной передачи текущего состояния всех имеющихся атрибутов на сервер.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Проверка (обновление данных)"
+    },
+    "climate_ac_turn_off": {
+      "description": "Выключить кондиционер",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Climate Ac Turn Off"
+    },
+    "climate_ac_turn_on": {
+      "description": "Включить кондиционер",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить кондиционер"
+    },
+    "climate_battery_heat_turn_off": {
+      "description": "Выключить подогрев аккумуляторной батареи автомобиля, обладающего данной системой (электрокары).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить подогрев аккумулятора"
+    },
+    "climate_battery_heat_turn_on": {
+      "description": "Включить подогрев аккумуляторной батареи автомобиля, обладающего данной системой (электрокары)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить подогрев аккумулятора"
+    },
+    "climate_defroster_turn_off": {
+      "description": "Выключить обогрев лобового стекла (используется кондиционер или электрический обогрев).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить обогрев лобового стекла"
+    },
+    "climate_defroster_turn_on": {
+      "description": "Включить обогрев лобового стекла (используется кондиционер или электрический обогрев).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить обогрев лобового стекла"
+    },
+    "climate_glass_heat_turn_off": {
+      "description": "Выключить электрический обогрев заднего стекла и зеркал заднего вида.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить обогрев стёкол и зеркал"
+    },
+    "climate_glass_heat_turn_on": {
+      "description": "Включить электрический обогрев заднего стекла и зеркал заднего вида.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить обогрев стёкол и зеркал"
+    },
+    "climate_mode_comfort": {
+      "description": "Включить климатический режим Комфорт (автоматическая регулировка климата).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить режим Комфорт"
+    },
+    "climate_mode_vent": {
+      "description": "Включить кондиционер в режиме вентиляции всего салона (maxAC).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить вентиляцию всего салона"
+    },
+    "climate_seat_heat_turn_off": {
+      "description": "Выключить подогрев всех сидений в автомобиле.\nУровень подогрева сидений сбрасывается до нуля.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить подогрев сидений"
+    },
+    "climate_seat_heat_turn_on": {
+      "description": "Включить подогрев всех сидений в автомобиле.\nПервичный вызов выставляет подогрев на максимум.\nПовторный вызов понижает степень подогрева.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить (понизить) подогрев сидений"
+    },
+    "climate_seat_vent_turn_off": {
+      "description": "Выключить вентиляцию всех сидений в автомобиле.\nУровень вентиляции сидений сбрасывается до нуля.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить вентиляцию сидений"
+    },
+    "climate_seat_vent_turn_on": {
+      "description": "Включить вентиляцию всех сидений в автомобиле.\nПервичный вызов выставляет вентиляцию на максимум.\nПовторный вызов понижает степень вентиляции.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить (понизить) вентиляцию сидений"
+    },
+    "climate_set_temperature": {
+      "description": "Установить целевую температуру системы климат-контроля для поддержания в салоне.",
+      "fields": {
+        "climate_temp": {
+          "description": "Целевая температура, необходимая для поддержания в салоне.",
+          "name": "Целевая температура"
+        },
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Установить целевую температуру климата"
+    },
+    "climate_steering_heat_turn_off": {
+      "description": "Выключить обогрев системы рулевого управления.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить обогрев руля"
+    },
+    "climate_steering_heat_turn_on": {
+      "description": "Включить обогрев системы рулевого управления.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить обогрев руля"
+    },
+    "climate_sys_turn_off": {
+      "description": "Выключение систем, связанных с климат-контролем.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить климат-контроль"
+    },
+    "climate_sys_turn_on": {
+      "description": "Включение систем, связанных с климат-контролем.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить климат-контроль"
+    },
+    "disable_active_security": {
+      "description": "Deactivate enhanced security measures.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить режим повышенной (активной) защиты"
+    },
+    "disable_connection": {
+      "description": "Прекратить передачу телеметрической информации на сервера AlarmTrade в реальном времени.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить связь с облаком"
+    },
+    "disable_service_mode": {
+      "description": "Вывести удалённое устройство из сервисного режима.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить режим техобслуживания"
+    },
+    "disable_status_output": {
+      "description": "Выключить канал статусного выхода на удалённом устройстве.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить статусный выход"
+    },
+    "disable_tracking": {
+      "description": "Deactivate the vehicle's tracking system.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Отключить отслеживание координат (трекинг)"
+    },
+    "enable_active_security": {
+      "description": "Activate enhanced security measures.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить режим повышенной (активной) защиты"
+    },
+    "enable_connection": {
+      "description": "Разрешить передачу телеметрической информации на сервера AlarmTrade в реальном времени.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить связь с облаком"
+    },
+    "enable_service_mode": {
+      "description": "Перевести удалённое устройство в сервисный режим.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить режим техобслуживания"
+    },
+    "enable_status_output": {
+      "description": "Включить канал статусного выхода на удалённом устройстве.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить статусный выход"
+    },
+    "enable_stealth_mode": {
+      "description": "Включить режим экономии энергии на базовом блоке (уменьшает объём передаваемой информации и количество запросов к спутникам).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить режим Stealth"
+    },
+    "enable_tracking": {
+      "description": "Включить систему отслеживания координат автомобиля и запись маршрутов.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить отслеживание координат (трекинг)"
+    },
+    "erase_dtc": {
+      "description": "Выполнить очистку диагностических кодов ошибок, считываемых по CAN-шине с ЭБУ автомобиля.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Очистить диагностические коды ошибок (DTC)"
+    },
+    "geocode": {
+      "description": "Получение краткого адреса местоположения на основе широты и долготы.",
+      "fields": {
+        "device_id": {
+          "description": "Объект / идентификатор устройства Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "location": {
+          "description": "Целевое местоположение (в виде набора широты и долготы).",
+          "name": "Местоположение"
+        }
+      },
+      "name": "Геокодирование локации"
+    },
+    "lock": {
+      "description": "Заблокировать центральный замок автомобиля и поставить его на охрану.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Постановка на охрану"
+    },
+    "nav12_disable_service_mode": {
+      "description": "Отключение сервисного режима (специальная команда для устройств NAV12).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Выйти из сервисного режима"
+    },
+    "nav12_disable_status_output": {
+      "description": "Отключение сервисного режима (специальная команда для устройств NAV12).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Отключить статусный выход"
+    },
+    "nav12_enable_service_mode": {
+      "description": "Включение сервисного режима (специальная команда для устройств NAV12).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Войти в сервисный режим"
+    },
+    "nav12_enable_status_output": {
+      "description": "Включение статусного выхода (нештатного иммобилайзера) (специальная команда для устройств NAV12).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Enable Status Output"
+    },
+    "nav12_reset_errors": {
+      "description": "Выполнить команду на удалённом устройстве: NAV12_RESET_ERRORS (57408)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Reset Errors"
+    },
+    "nav12_turn_off_block_heater": {
+      "description": "Выполнить команду на удалённом устройстве: NAV12_TURN_OFF_BLOCK_HEATER (57353)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Turn Off Block Heater"
+    },
+    "nav12_turn_on_block_heater": {
+      "description": "Выполнить команду на удалённом устройстве: NAV12_TURN_ON_BLOCK_HEATER (57354)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "(NAV12) Turn On Block Heater"
+    },
+    "ps_call": {
+      "description": "Выполнить команду на удалённом устройстве: PS_CALL (256)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Ps Call"
+    },
+    "read_dtc": {
+      "description": "Прочесть диагностические коды ошибок по CAN-шине с ЭБУ автомобиля",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Прочитать диагностические коды ошибок (DTC)"
+    },
+    "remote_command": {
+      "description": "Выполнить произвольную команду напрямую (используя идентификатор команды).",
+      "fields": {
+        "command_id": {
+          "description": "Числовой идентификатор команды, обрабатываемой прошивкой целевого устройства Pandora.",
+          "name": "Идентификатор команды"
+        },
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Удалённая команда"
+    },
+    "start_engine": {
+      "description": "Commence the vehicle's engine remotely (autostart operation).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Запуск двигателя"
+    },
+    "stay_home_propion": {
+      "description": "Выполнить команду на удалённом устройстве: STAY_HOME_PROPION (42)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Stay Home Propion"
+    },
+    "stop_engine": {
+      "description": "Halt the running vehicle engine remotely (autostart operation).",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Остановка двигателя"
+    },
+    "trigger_horn": {
+      "description": "Активировать однократно цикл издания звука установленной сиреной (или клаксоном), используемой(-ым) в качестве оповещения о возникновении тревожного события.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Издать звук сирены"
+    },
+    "trigger_light": {
+      "description": "Активировать однократно цикл включения освещения (фары, сигналы), используемого в качестве оповещения о возникновении тревожного события.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Моргнуть элементами освещения"
+    },
+    "trigger_trunk": {
+      "description": "Спровоцировать багажник автомобиля на открытие.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Открыть багажник"
+    },
+    "turn_off_block_heater": {
+      "description": "Произвести остановку деятельности предпускового подогревателя.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить предпусковой подогреватель"
+    },
+    "turn_off_coolant_heater": {
+      "description": "Stop the coolant heater operation.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный идентификатор целевого устройства Pandora.",
+          "name": "Устройство Pandora"
+        }
+      },
+      "name": "Выключить предпусковой подогреватель"
+    },
+    "turn_off_ext_channel": {
+      "description": "Деактивировать внешнее устройство или аксессуар.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Выключить дополнительный канал"
+    },
+    "turn_on_block_heater": {
+      "description": "Выполнить команду на удалённом устройстве: TURN_ON_BLOCK_HEATER (21)",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Turn On Block Heater"
+    },
+    "turn_on_coolant_heater": {
+      "description": "Start the coolant heater operation.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный идентификатор целевого устройства Pandora.",
+          "name": "Устройство Pandora"
+        }
+      },
+      "name": "Включить предпусковой подогреватель"
+    },
+    "turn_on_ext_channel": {
+      "description": "Активировать внешнее устройство или аксессуар.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Включить дополнительный канал"
+    },
+    "unlock": {
+      "description": "Disengage the vehicle's security mechanism to allow access.",
+      "fields": {
+        "device_id": {
+          "description": "Уникальный числовой идентификатор целевого устройства Pandora, или объект устройства в Home Assistant.",
+          "name": "Устройство Pandora"
+        },
+        "ensure_complete": {
+          "description": "Ожидать окончания выполнения отправки команды.",
+          "name": "Ожидать завершения"
+        }
+      },
+      "name": "Снятие с охраны"
+    }
+  }
+}

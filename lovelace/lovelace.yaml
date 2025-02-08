@@ -1,0 +1,4 @@
+config:
+  strategy:
+    hide_energy: true
+    type: original-states

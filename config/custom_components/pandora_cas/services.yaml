@@ -1,0 +1,818 @@
+geocode:
+  fields:
+    device_id:
+      required: false
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    location:
+      required: false
+      selector:
+        location:
+          radius: false
+remote_command:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    command_id:
+      example: 1
+      selector:
+        number:
+          min: 0
+          max: 99999999
+          mode: box
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+lock:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+unlock:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+start_engine:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+stop_engine:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+enable_tracking:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+disable_tracking:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+enable_active_security:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+disable_active_security:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+turn_on_coolant_heater:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+turn_off_coolant_heater:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+turn_on_ext_channel:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+turn_off_ext_channel:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+enable_service_mode:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+disable_service_mode:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+enable_status_output:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+disable_status_output:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+trigger_horn:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+trigger_light:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+trigger_trunk:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+check:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+erase_dtc:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+read_dtc:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+additional_command_1:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+additional_command_2:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+enable_connection:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+disable_connection:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+turn_on_block_heater:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+turn_off_block_heater:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_disable_service_mode:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_enable_service_mode:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_turn_off_block_heater:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_turn_on_block_heater:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_reset_errors:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_enable_status_output:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+nav12_disable_status_output:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_set_temperature:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    climate_temp:
+      example: 18
+      selector:
+        number:
+          min: 16
+          max: 33
+          step: 1
+          unit_of_measurement: °C
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_seat_heat_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_seat_heat_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_seat_vent_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_seat_vent_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_glass_heat_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_glass_heat_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_steering_heat_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_steering_heat_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_ac_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_ac_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_sys_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_sys_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_defroster_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_defroster_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_mode_comfort:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_mode_vent:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_battery_heat_turn_on:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+climate_battery_heat_turn_off:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+enable_stealth_mode:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+stay_home_propion:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+ps_call:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: pandora_cas
+      example: 1234567
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+benish_disable_service_mode:
+  fields:
+    device_id:
+      example: 1234567
+      selector:
+        device:
+          integration: pandora_cas
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+benish_enable_service_mode:
+  fields:
+    device_id:
+      example: 1234567
+      selector:
+        device:
+          integration: pandora_cas
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+benish_disable_engine_blocking:
+  fields:
+    device_id:
+      example: 1234567
+      selector:
+        device:
+          integration: pandora_cas
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:
+benish_enable_engine_blocking:
+  fields:
+    device_id:
+      example: 1234567
+      selector:
+        device:
+          integration: pandora_cas
+    ensure_complete:
+      example: true
+      default: false
+      selector:
+        boolean:

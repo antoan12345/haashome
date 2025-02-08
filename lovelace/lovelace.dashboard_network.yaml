@@ -1,0 +1,15 @@
+config:
+  views:
+  - cards: []
+    sections:
+    - cards:
+      - badges:
+        - entity: media_player.office_tv
+          type: entity
+        heading: New section
+        heading_style: title
+        type: heading
+      - entity: media_player.office_tv
+        type: media-control
+      type: grid
+    title: Home
